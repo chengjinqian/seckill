@@ -795,7 +795,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1492395490760</updated>
-      <workItem from="1492395494029" duration="8343000" />
+      <workItem from="1492395494029" duration="8498000" />
     </task>
     <task id="LOCAL-00001" summary="create database">
       <created>1492411403896</created>
@@ -804,11 +804,18 @@
       <option name="project" value="LOCAL" />
       <updated>1492411403897</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="create database">
+      <created>1492412037481</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1492412037481</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8343000" />
+    <option name="totallyTimeSpent" value="8498000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
