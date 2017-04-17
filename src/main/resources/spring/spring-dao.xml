@@ -46,7 +46,7 @@
         <!-- 注入sqlSessionFactory-->
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
         <!--给出需要扫描的Dao接口-->
-        <property name="basePackage" value="com.force4us.entity"/>
+        <property name="basePackage" value="com.force4us.dao"/>
     </bean>
 
 
