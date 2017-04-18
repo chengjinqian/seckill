@@ -1,5 +1,7 @@
 package com.force4us.dto;
 
+import com.force4us.entity.Seckill;
+
 /**暴露秒杀地址(接口)DTO
  * Created by chengjinqian on 2017/4/18.
  */
@@ -28,8 +30,9 @@ public class Exposer {
         this.seckillId = seckillId;
     }
 
-    public Exposer(boolean exposed, long now, long start, long end) {
+    public Exposer(boolean exposed, long seckillId, long now, long start, long end) {
         this.exposed = exposed;
+        this.seckillId = seckillId;
         this.now = now;
         this.start = start;
         this.end = end;

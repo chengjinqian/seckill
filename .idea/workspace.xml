@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a15214bc-3a21-4287-adfb-d07a39d8f729" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../seckill/src/main/java/com/force4us/dto/Exposer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../seckill/src/main/java/com/force4us/dto/SeckillExecution.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../seckill/src/main/java/com/force4us/exception/RepeatKillException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../seckill/src/main/java/com/force4us/exception/SeckillCloseException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../seckill/src/main/java/com/force4us/exception/SeckillException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../seckill/src/main/java/com/force4us/service/SeckillService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../seckill/src/main/java/com/force4us/service/impl/SeckillServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../seckill/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../seckill/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../seckill/src/main/java/com/force4us/dao/SeckillDao.java" afterPath="$PROJECT_DIR$/../seckill/src/main/java/com/force4us/dao/SeckillDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../seckill/src/main/resources/mapper/SeckillDao.xml" afterPath="$PROJECT_DIR$/../seckill/src/main/resources/mapper/SeckillDao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../seckill/src/main/java/com/force4us/dto/Exposer.java" afterPath="$PROJECT_DIR$/../seckill/src/main/java/com/force4us/dto/Exposer.java" />
     </list>
     <ignored path="$PROJECT_DIR$/../seckill/out/" />
     <ignored path="$PROJECT_DIR$/../seckill/target/" />
@@ -70,12 +64,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="spring-dao.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../seckill/src/main/resources/spring/spring-dao.xml">
+      <file leaf-file-name="SeckillServiceImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../seckill/src/main/java/com/force4us/service/impl/SeckillServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="21" column="29" lean-forward="false" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
-              <folding />
+            <state relative-caret-position="283">
+              <caret line="52" column="2" lean-forward="false" selection-start-line="52" selection-start-column="2" selection-end-line="52" selection-end-column="2" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1060#1061#0" expanded="true" />
+                <element signature="e#1107#1108#0" expanded="true" />
+                <element signature="e#1153#1154#0" expanded="true" />
+                <element signature="e#1207#1208#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SeckillDao.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../seckill/src/main/resources/mapper/SeckillDao.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+              <folding>
+                <marker date="1492434674622" expanded="true" signature="252:361" ph="UPDATE secki... " />
+                <marker date="1492434674622" expanded="true" signature="252:374" ph="UPDATE secki... " />
+                <marker date="1492434674622" expanded="true" signature="252:377" ph="UPDATE secki... " />
+                <marker date="1492434674622" expanded="true" signature="252:411" ph="UPDATE secki... " />
+                <marker date="1492434674622" expanded="true" signature="252:412" ph="UPDATE secki... " />
+                <marker date="1492434674622" expanded="true" signature="252:448" ph="UPDATE secki... " />
+                <marker date="1492434674622" expanded="true" signature="252:449" ph="UPDATE secki... " />
+                <marker date="1492434674622" expanded="true" signature="635:704" ph="SELECT * FRO... seckill" />
+                <marker date="1492434674622" expanded="true" signature="776:872" ph="SELECT * FRO... seckill" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -83,8 +103,8 @@
       <file leaf-file-name="SuccessKilledDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../seckill/src/main/java/com/force4us/dao/SuccessKilledDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="24" column="30" lean-forward="false" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+            <state relative-caret-position="176">
+              <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -95,33 +115,33 @@
       <file leaf-file-name="Exposer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../seckill/src/main/java/com/force4us/dto/Exposer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1552">
-              <caret line="97" column="36" lean-forward="true" selection-start-line="97" selection-start-column="36" selection-end-line="97" selection-end-column="36" />
+            <state relative-caret-position="304">
+              <caret line="40" column="14" lean-forward="true" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
               <folding>
-                <element signature="e#855#856#0" expanded="true" />
-                <element signature="e#885#886#0" expanded="true" />
-                <element signature="e#932#933#0" expanded="true" />
-                <element signature="e#970#971#0" expanded="true" />
-                <element signature="e#1000#1001#0" expanded="true" />
-                <element signature="e#1026#1027#0" expanded="true" />
-                <element signature="e#1064#1065#0" expanded="true" />
-                <element signature="e#1094#1095#0" expanded="true" />
-                <element signature="e#1128#1129#0" expanded="true" />
-                <element signature="e#1160#1161#0" expanded="true" />
-                <element signature="e#1208#1209#0" expanded="true" />
-                <element signature="e#1250#1251#0" expanded="true" />
-                <element signature="e#1278#1279#0" expanded="true" />
-                <element signature="e#1304#1305#0" expanded="true" />
-                <element signature="e#1340#1341#0" expanded="true" />
-                <element signature="e#1370#1371#0" expanded="true" />
-                <element signature="e#1400#1401#0" expanded="true" />
-                <element signature="e#1428#1429#0" expanded="true" />
-                <element signature="e#1468#1469#0" expanded="true" />
-                <element signature="e#1502#1503#0" expanded="true" />
-                <element signature="e#1530#1531#0" expanded="true" />
-                <element signature="e#1556#1557#0" expanded="true" />
-                <element signature="e#1592#1593#0" expanded="true" />
-                <element signature="e#1622#1623#0" expanded="true" />
+                <element signature="e#944#945#0" expanded="true" />
+                <element signature="e#974#975#0" expanded="true" />
+                <element signature="e#1021#1022#0" expanded="true" />
+                <element signature="e#1059#1060#0" expanded="true" />
+                <element signature="e#1089#1090#0" expanded="true" />
+                <element signature="e#1115#1116#0" expanded="true" />
+                <element signature="e#1153#1154#0" expanded="true" />
+                <element signature="e#1183#1184#0" expanded="true" />
+                <element signature="e#1217#1218#0" expanded="true" />
+                <element signature="e#1249#1250#0" expanded="true" />
+                <element signature="e#1297#1298#0" expanded="true" />
+                <element signature="e#1339#1340#0" expanded="true" />
+                <element signature="e#1367#1368#0" expanded="true" />
+                <element signature="e#1393#1394#0" expanded="true" />
+                <element signature="e#1429#1430#0" expanded="true" />
+                <element signature="e#1459#1460#0" expanded="true" />
+                <element signature="e#1489#1490#0" expanded="true" />
+                <element signature="e#1517#1518#0" expanded="true" />
+                <element signature="e#1557#1558#0" expanded="true" />
+                <element signature="e#1591#1592#0" expanded="true" />
+                <element signature="e#1619#1620#0" expanded="true" />
+                <element signature="e#1645#1646#0" expanded="true" />
+                <element signature="e#1681#1682#0" expanded="true" />
+                <element signature="e#1711#1712#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -141,10 +161,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SeckillExecution.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SeckillExecution.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../seckill/src/main/java/com/force4us/dto/SeckillExecution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
+            <state relative-caret-position="224">
               <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
               <folding />
             </state>
@@ -177,16 +197,6 @@
                 <element signature="e#291#292#0" expanded="true" />
                 <element signature="e#328#329#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jdbc.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../seckill/src/main/resources/jdbc.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="3" column="22" lean-forward="false" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -238,12 +248,13 @@
         <option value="$PROJECT_DIR$/../seckill/src/test/java/com/force4us/dao/SeckillDaoTest.java" />
         <option value="$PROJECT_DIR$/../seckill/src/main/resources/mapper/SeckillDao.xml" />
         <option value="$PROJECT_DIR$/../seckill/src/main/java/com/force4us/dao/SeckillDao.java" />
-        <option value="$PROJECT_DIR$/../seckill/src/main/java/com/force4us/dto/Exposer.java" />
         <option value="$PROJECT_DIR$/../seckill/src/main/java/com/force4us/dto/SeckillExecution.java" />
         <option value="$PROJECT_DIR$/../seckill/src/main/java/com/force4us/exception/SeckillException.java" />
         <option value="$PROJECT_DIR$/../seckill/src/main/java/com/force4us/exception/RepeatKillException.java" />
         <option value="$PROJECT_DIR$/../seckill/src/main/java/com/force4us/exception/SeckillCloseException.java" />
         <option value="$PROJECT_DIR$/../seckill/src/main/java/com/force4us/service/SeckillService.java" />
+        <option value="$PROJECT_DIR$/../seckill/src/main/java/com/force4us/dto/Exposer.java" />
+        <option value="$PROJECT_DIR$/../seckill/src/main/java/com/force4us/service/impl/SeckillServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -1346,7 +1357,7 @@
       <updated>1492395490760</updated>
       <workItem from="1492395494029" duration="23234000" />
       <workItem from="1492436235947" duration="44000" />
-      <workItem from="1492478064594" duration="2352000" />
+      <workItem from="1492478064594" duration="4397000" />
     </task>
     <task id="LOCAL-00001" summary="create database">
       <created>1492411403896</created>
@@ -1404,7 +1415,14 @@
       <option name="project" value="LOCAL" />
       <updated>1492434372354</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="create service interface">
+      <created>1492480908703</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1492480908703</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1440,7 +1458,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25630000" />
+    <option name="totallyTimeSpent" value="27675000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1515,7 +1533,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="create database" />
     <MESSAGE value="create mybatis mapper" />
-    <option name="LAST_COMMIT_MESSAGE" value="create mybatis mapper" />
+    <MESSAGE value="create service interface" />
+    <option name="LAST_COMMIT_MESSAGE" value="create service interface" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1791,24 +1810,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../seckill/src/main/resources/mapper/SeckillDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <marker date="1492434674622" expanded="true" signature="252:361" ph="UPDATE secki... " />
-            <marker date="1492434674622" expanded="true" signature="252:374" ph="UPDATE secki... " />
-            <marker date="1492434674622" expanded="true" signature="252:377" ph="UPDATE secki... " />
-            <marker date="1492434674622" expanded="true" signature="252:411" ph="UPDATE secki... " />
-            <marker date="1492434674622" expanded="true" signature="252:412" ph="UPDATE secki... " />
-            <marker date="1492434674622" expanded="true" signature="252:448" ph="UPDATE secki... " />
-            <marker date="1492434674622" expanded="true" signature="252:449" ph="UPDATE secki... " />
-            <marker date="1492434674622" expanded="true" signature="635:704" ph="SELECT * FRO... seckill" />
-            <marker date="1492434674622" expanded="true" signature="776:872" ph="SELECT * FRO... seckill" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../seckill/src/main/resources/spring/spring-dao.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -1830,26 +1831,6 @@
         <state relative-caret-position="99">
           <caret line="10" column="52" lean-forward="false" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../seckill/src/main/java/com/force4us/dao/SeckillDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="36" column="21" lean-forward="true" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../seckill/src/main/java/com/force4us/dao/SuccessKilledDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="24" column="30" lean-forward="false" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1889,39 +1870,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../seckill/src/main/java/com/force4us/dto/Exposer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1552">
-          <caret line="97" column="36" lean-forward="true" selection-start-line="97" selection-start-column="36" selection-end-line="97" selection-end-column="36" />
-          <folding>
-            <element signature="e#855#856#0" expanded="true" />
-            <element signature="e#885#886#0" expanded="true" />
-            <element signature="e#932#933#0" expanded="true" />
-            <element signature="e#970#971#0" expanded="true" />
-            <element signature="e#1000#1001#0" expanded="true" />
-            <element signature="e#1026#1027#0" expanded="true" />
-            <element signature="e#1064#1065#0" expanded="true" />
-            <element signature="e#1094#1095#0" expanded="true" />
-            <element signature="e#1128#1129#0" expanded="true" />
-            <element signature="e#1160#1161#0" expanded="true" />
-            <element signature="e#1208#1209#0" expanded="true" />
-            <element signature="e#1250#1251#0" expanded="true" />
-            <element signature="e#1278#1279#0" expanded="true" />
-            <element signature="e#1304#1305#0" expanded="true" />
-            <element signature="e#1340#1341#0" expanded="true" />
-            <element signature="e#1370#1371#0" expanded="true" />
-            <element signature="e#1400#1401#0" expanded="true" />
-            <element signature="e#1428#1429#0" expanded="true" />
-            <element signature="e#1468#1469#0" expanded="true" />
-            <element signature="e#1502#1503#0" expanded="true" />
-            <element signature="e#1530#1531#0" expanded="true" />
-            <element signature="e#1556#1557#0" expanded="true" />
-            <element signature="e#1592#1593#0" expanded="true" />
-            <element signature="e#1622#1623#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../seckill/src/main/java/com/force4us/exception/SeckillException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -1936,9 +1884,94 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../seckill/src/main/java/com/force4us/dto/SeckillExecution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
+        <state relative-caret-position="224">
           <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../seckill/src/main/resources/mapper/SeckillDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+          <folding>
+            <marker date="1492434674622" expanded="true" signature="252:361" ph="UPDATE secki... " />
+            <marker date="1492434674622" expanded="true" signature="252:374" ph="UPDATE secki... " />
+            <marker date="1492434674622" expanded="true" signature="252:377" ph="UPDATE secki... " />
+            <marker date="1492434674622" expanded="true" signature="252:411" ph="UPDATE secki... " />
+            <marker date="1492434674622" expanded="true" signature="252:412" ph="UPDATE secki... " />
+            <marker date="1492434674622" expanded="true" signature="252:448" ph="UPDATE secki... " />
+            <marker date="1492434674622" expanded="true" signature="252:449" ph="UPDATE secki... " />
+            <marker date="1492434674622" expanded="true" signature="635:704" ph="SELECT * FRO... seckill" />
+            <marker date="1492434674622" expanded="true" signature="776:872" ph="SELECT * FRO... seckill" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../seckill/src/main/java/com/force4us/dao/SuccessKilledDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../seckill/src/main/java/com/force4us/dao/SeckillDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="36" column="21" lean-forward="true" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../seckill/src/main/java/com/force4us/dto/Exposer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="40" column="14" lean-forward="true" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
+          <folding>
+            <element signature="e#944#945#0" expanded="true" />
+            <element signature="e#974#975#0" expanded="true" />
+            <element signature="e#1021#1022#0" expanded="true" />
+            <element signature="e#1059#1060#0" expanded="true" />
+            <element signature="e#1089#1090#0" expanded="true" />
+            <element signature="e#1115#1116#0" expanded="true" />
+            <element signature="e#1153#1154#0" expanded="true" />
+            <element signature="e#1183#1184#0" expanded="true" />
+            <element signature="e#1217#1218#0" expanded="true" />
+            <element signature="e#1249#1250#0" expanded="true" />
+            <element signature="e#1297#1298#0" expanded="true" />
+            <element signature="e#1339#1340#0" expanded="true" />
+            <element signature="e#1367#1368#0" expanded="true" />
+            <element signature="e#1393#1394#0" expanded="true" />
+            <element signature="e#1429#1430#0" expanded="true" />
+            <element signature="e#1459#1460#0" expanded="true" />
+            <element signature="e#1489#1490#0" expanded="true" />
+            <element signature="e#1517#1518#0" expanded="true" />
+            <element signature="e#1557#1558#0" expanded="true" />
+            <element signature="e#1591#1592#0" expanded="true" />
+            <element signature="e#1619#1620#0" expanded="true" />
+            <element signature="e#1645#1646#0" expanded="true" />
+            <element signature="e#1681#1682#0" expanded="true" />
+            <element signature="e#1711#1712#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../seckill/src/main/java/com/force4us/service/impl/SeckillServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="52" column="2" lean-forward="false" selection-start-line="52" selection-start-column="2" selection-end-line="52" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1060#1061#0" expanded="true" />
+            <element signature="e#1107#1108#0" expanded="true" />
+            <element signature="e#1153#1154#0" expanded="true" />
+            <element signature="e#1207#1208#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
