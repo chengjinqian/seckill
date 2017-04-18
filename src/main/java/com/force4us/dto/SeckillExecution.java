@@ -1,6 +1,7 @@
 package com.force4us.dto;
 
 import com.force4us.entity.SuccessKilled;
+import com.force4us.enums.SeckillStatEnum;
 
 /**封装执行秒杀后的结果:是否秒杀成功
  * Created by chengjinqian on 2017/4/18.
@@ -19,16 +20,16 @@ public class SeckillExecution {
     private SuccessKilled successKilled;
 
 
-    public SeckillExecution(long seckillId, int state, String stateInfo) {
+    public SeckillExecution(long seckillId, SeckillStatEnum statEnum) {
         this.seckillId = seckillId;
-        this.state = state;
-        this.stateInfo = stateInfo;
+        this.state = statEnum.getState();
+        this.stateInfo = statEnum.getStateInfo();
     }
 
-    public SeckillExecution(long seckillId, int state, String stateInfo, SuccessKilled successKilled) {
+    public SeckillExecution(long seckillId, SeckillStatEnum statEnum, SuccessKilled successKilled) {
         this.seckillId = seckillId;
-        this.state = state;
-        this.stateInfo = stateInfo;
+        this.state = statEnum.getState();
+        this.stateInfo = statEnum.getStateInfo();
         this.successKilled = successKilled;
     }
 
