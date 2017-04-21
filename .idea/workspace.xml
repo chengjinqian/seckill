@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a15214bc-3a21-4287-adfb-d07a39d8f729" name="Default" comment="add redis">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../seckill/src/main/java/com/force4us/dao/cache/RedisDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../seckill/src/test/java/com/force4us/dao/cache/RedisDaoTest.java" />
+    <list default="true" id="a15214bc-3a21-4287-adfb-d07a39d8f729" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../seckill/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../seckill/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../seckill/src/main/java/com/force4us/service/impl/SeckillServiceImpl.java" afterPath="$PROJECT_DIR$/../seckill/src/main/java/com/force4us/service/impl/SeckillServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../seckill/src/main/resources/spring/spring-dao.xml" afterPath="$PROJECT_DIR$/../seckill/src/main/resources/spring/spring-dao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../seckill/src/main/webapp/WEB-INF/jsp/list.jsp" afterPath="$PROJECT_DIR$/../seckill/src/main/webapp/WEB-INF/jsp/list.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/../seckill/out/" />
     <ignored path="$PROJECT_DIR$/../seckill/target/" />
@@ -33,11 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SeckillServiceImpl.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SeckillServiceImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../seckill/src/main/java/com/force4us/service/impl/SeckillServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="40" column="30" lean-forward="false" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
+            <state relative-caret-position="318">
+              <caret line="111" column="43" lean-forward="false" selection-start-line="111" selection-start-column="43" selection-end-line="111" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -107,7 +103,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="spring-dao.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="spring-dao.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../seckill/src/main/resources/spring/spring-dao.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="352">
@@ -304,6 +300,9 @@
             <id>Code style issuesJava</id>
           </State>
           <State>
+            <id>CodeSpring CoreSpring</id>
+          </State>
+          <State>
             <id>Control flow issuesJavaScript</id>
           </State>
           <State>
@@ -376,6 +375,12 @@
             <id>SQL</id>
           </State>
           <State>
+            <id>Spring</id>
+          </State>
+          <State>
+            <id>Spring CoreSpring</id>
+          </State>
+          <State>
             <id>TestNGJava</id>
           </State>
           <State>
@@ -385,6 +390,11 @@
             <id>Visibility issuesJava</id>
           </State>
         </expanded-state>
+        <selected-state>
+          <State>
+            <id>SpringJavaAutowiringInspection</id>
+          </State>
+        </selected-state>
       </profile-state>
     </entry>
   </component>
@@ -1541,7 +1551,7 @@
       <workItem from="1492563323044" duration="21232000" />
       <workItem from="1492655721515" duration="1353000" />
       <workItem from="1492686425917" duration="8578000" />
-      <workItem from="1492736706225" duration="346000" />
+      <workItem from="1492736706225" duration="966000" />
     </task>
     <task id="LOCAL-00001" summary="create database">
       <created>1492411403896</created>
@@ -1648,7 +1658,14 @@
       <option name="project" value="LOCAL" />
       <updated>1492656226232</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="add redis">
+      <created>1492737063918</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1492737063918</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1684,7 +1701,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70003000" />
+    <option name="totallyTimeSpent" value="70623000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2189,14 +2206,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../seckill/src/main/java/com/force4us/service/impl/SeckillServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="40" column="30" lean-forward="false" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../seckill/src/test/java/com/force4us/dao/SuccessKilledDaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -2217,6 +2226,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="54" column="49" lean-forward="false" selection-start-line="54" selection-start-column="49" selection-end-line="54" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../seckill/src/main/java/com/force4us/service/impl/SeckillServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="111" column="43" lean-forward="false" selection-start-line="111" selection-start-column="43" selection-end-line="111" selection-end-column="43" />
           <folding />
         </state>
       </provider>
