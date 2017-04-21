@@ -37,6 +37,12 @@
       <scope>test</scope>
     </dependency>
 
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-collections4</artifactId>
+      <version>4.1</version>
+    </dependency>
+
     <!--补全项目依赖-->
     <!--1.日志 java日志有:slf4j,log4j,logback,common-logging
         slf4j:是规范/接口

@@ -25,4 +25,13 @@
         ORDER BY create_time DESC
         limit #{offset},#{limit}
     </select>
+
+    <select id="killByProcedure" statementType="CALLABLE">
+        CALL excuteSeckill(
+        #{seckillId, jdbcType=BIGINT, mode=IN},
+        #{phone, jdbcType=BIGINT, mode=IN},
+        #{killTime, jdbcType=TIMESTAMP, mode=IN},
+        #{result, jdbcType=INTEGER, mode=OUT}
+        )
+    </select>
 </mapper>

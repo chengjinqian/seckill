@@ -12,6 +12,7 @@ import com.force4us.exception.RepeatKillException;
 import com.force4us.exception.SeckillCloseException;
 import com.force4us.exception.SeckillException;
 import com.force4us.service.SeckillService;
+import org.apache.commons.collections4.MapUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +22,9 @@ import org.springframework.util.DigestUtils;
 
 import javax.annotation.Resource;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by chengjinqian on 2017/4/18.
@@ -130,6 +133,32 @@ public class SeckillServiceImpl implements SeckillService {
             logger.error(e.getMessage(), e);
             //所有编译器异常，转化成运行期异常
             throw new SeckillException("seckill inner error:" + e.getMessage());
+        }
+    }
+
+    public SeckillExecution executeSeckillProcedure(long seckillId, long userPhone, String md5) throws SeckillException, RepeatKillException, SeckillCloseException {
+        if(md5 == null || !md5.equals(getMD5(seckillId))){
+            return new SeckillExecution(seckillId,SeckillStatEnum.DATE_REWRITE);
+        }
+        Date time = new Date();
+        Map<String,Object> map = new HashMap<String, Object>();
+        map.put("seckillId",seckillId);
+        map.put("phone",userPhone);
+        map.put("killTime",time);
+        map.put("result",null);
+        try {
+            seckillDao.killByProcedure(map);
+            int result = MapUtils.getInteger(map,"result",-2);
+            if(result == 1){
+                SuccessKilled successKill = successKilledDao.queryByIdWithSeckill(seckillId,userPhone);
+                return new SeckillExecution(seckillId,SeckillStatEnum.SUCCESS,successKill);
+            }
+            else{
+                return new SeckillExecution(seckillId,SeckillStatEnum.stateOf(result));
+            }
+        }catch(Exception e){
+            logger.error(e.getMessage(),e);
+            return new SeckillExecution(seckillId,SeckillStatEnum.INNER_ERROR);
         }
     }
 }

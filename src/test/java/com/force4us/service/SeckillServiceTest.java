@@ -28,6 +28,7 @@ import static org.junit.Assert.*;
 public class SeckillServiceTest {
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
+    
     @Autowired
     private SeckillService seckillService;
 
@@ -66,6 +67,19 @@ public class SeckillServiceTest {
             logger.warn("expose={}", exposer);
         }
 
+    }
+
+
+    @Test
+    public void executeSeckillProcedure(){
+        long seckillId = 1002;
+        long phone = 18810464493L;
+        Exposer exposer = seckillService.exportSeckillUrl(seckillId);
+        if(exposer.isExposed()){
+            String md5 = exposer.getMd5();
+            SeckillExecution seckillExcution = seckillService.executeSeckillProcedure(seckillId, phone, md5);
+            logger.info("============="+seckillExcution.getStateInfo());
+        }
     }
 
 
