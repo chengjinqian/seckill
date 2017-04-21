@@ -2,6 +2,7 @@ package com.force4us.service.impl;
 
 import com.force4us.dao.SeckillDao;
 import com.force4us.dao.SuccessKilledDao;
+import com.force4us.dao.cache.RedisDao;
 import com.force4us.dto.Exposer;
 import com.force4us.dto.SeckillExecution;
 import com.force4us.entity.Seckill;
@@ -36,6 +37,9 @@ public class SeckillServiceImpl implements SeckillService {
     @Autowired
     private SuccessKilledDao successKilledDao;
 
+    @Autowired
+    private RedisDao redisDao;
+
     //加入一个混淆字符串(秒杀接口)的salt，为了我避免用户猜出我们的md5值，值任意给，越复杂越好
     private final String salt = "sadjgioqwelrhaljflutoiu293480523*&%*&*#";
 
@@ -48,10 +52,21 @@ public class SeckillServiceImpl implements SeckillService {
     }
 
     public Exposer exportSeckillUrl(long seckillId) {
-        Seckill seckill = getById(seckillId);
-        //查不到这个秒杀产品的记录
+        //缓存优化
+        //1。访问redi
+
+
+        Seckill seckill = redisDao.getSeckill(seckillId);
         if (seckill == null) {
-            return new Exposer(false, seckillId);
+            //2.访问数据库
+            seckill = seckillDao.queryById(seckillId);
+            if (seckill == null) {//说明查不到这个秒杀产品的记录
+                return new Exposer(false, seckillId);
+            }else {
+                //3,放入redis
+                redisDao.putSeckill(seckill);
+            }
+
         }
         Date startTime = seckill.getStartTime();
         Date endTime = seckill.getEndTime();
