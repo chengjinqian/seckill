@@ -13,7 +13,7 @@
         AND number > 0
     </update>
 
-        <select id="queryById" resultType="Seckill"                                                                                         parameterType="long">
+    <select id="queryById" resultType="Seckill" parameterType="long">
         SELECT *
         FROM seckill
         WHERE seckill_id = #{seckillId}
