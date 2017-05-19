@@ -4,6 +4,7 @@
        xmlns:contex="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
+
     <!-- 配置整合mybatis过程-->
     <!-- 1、配置数据库相关参数-->
     <contex:property-placeholder location="classpath:jdbc.properties"/>
@@ -48,6 +49,7 @@
         <!--给出需要扫描的Dao接口-->
         <property name="basePackage" value="com.force4us.dao"/>
     </bean>
+
 
     <!--redisDao-->
     <bean id="redisDao" class="com.force4us.dao.cache.RedisDao">

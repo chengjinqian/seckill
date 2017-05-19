@@ -1,5 +1,7 @@
 package com.force4us.entity;
 
+import org.springframework.stereotype.Component;
+
 import java.util.Date;
 
 /**
